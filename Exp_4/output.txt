@@ -1,0 +1,3 @@
+Grammar after Left Factoring:
+A -> A'
+A' -> K|ü | Îµ

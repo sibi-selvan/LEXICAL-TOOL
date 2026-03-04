@@ -1,0 +1,17 @@
+
+Predictive Parsing Table:
+
+-----------------------------
+Non-Terminal | Production
+-----------------------------
+     E       |   E=TR
+     R       |   R=+TR
+     R       |   R=ε
+     T       |   T=FY
+     Y       |   Y=*FY
+     Y       |   Y=ε
+-----------------------------
+
+NOTE:
+1. If A → α and 'a' in FIRST(α), add A→α to M[A,a]
+2. If ε in FIRST(α), add A→α to M[A,b] for all b in FOLLOW(A)
